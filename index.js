@@ -3,7 +3,7 @@ const path = require("path");
 
 const app = express();
 
-app.get("debug", (req, res) => {
+app.get("/debug", (req, res) => {
   console.log("Headers are", req.rawHeaders);
   res.send("OK");
 });
